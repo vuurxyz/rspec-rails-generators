@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+# support/generators/example/templates/model_test.rb.tt
+
+require "test_helper"
+
+class <%= class_name %>Test < ActiveSupport::TestCase
+  setup do
+    @<%= singular_name %> = <%= class_name %>.new
+  end
+
+  test "the truth" do
+    assert_predicate @<%= singular_name %>, present?
+  end
+end

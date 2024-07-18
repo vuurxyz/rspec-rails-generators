@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+# support/generators/examples/templates//model.rb.tt
+
+class <%= class_name %>
+<% if active_model? -%>
+  include ActiveModel::Model
+
+<% end -%>
+<% if attributes_names.any? -%>
+  attr_accessor <%= attributes_names.map { |name| ":#{name}" }.join(', ') %>
+
+<% end -%>
+end

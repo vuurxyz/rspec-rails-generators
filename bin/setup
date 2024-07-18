@@ -5,4 +5,5 @@ set -vx
 
 bundle install
 
-# Do any other automated setup that you need to do here
+# We need the tmp directory to exist to store our created generator files during test
+mkdir -p tmp;

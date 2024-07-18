@@ -1,0 +1,20 @@
+Description:
+    Generates a simple Ruby class with the given NAME
+
+Example:
+    `bin/rails generate example Name`
+
+    This will create:
+        app/models/name.rb
+        test/models/name_test.rb
+
+    `bin/rails generate example Point x y`
+
+    This will create these files and add x and y attr_accessor:
+        app/models/name.rb
+        test/models/name_test.rb
+
+    `bin/rails generate example Point x y --no-active-model`
+
+    This will create these files, add x and y attr_accessor, but skip the ActiveModel include:
+        app/models/name.rb
