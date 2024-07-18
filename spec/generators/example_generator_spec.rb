@@ -1,4 +1,4 @@
-require "support/generators/example/example_generator"
+require_relative "../support/generators/example/example_generator"
 
 RSpec.describe ExampleGenerator, type: :generator do
   it "generates the model file" do

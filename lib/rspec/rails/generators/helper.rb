@@ -28,6 +28,11 @@ module Rspec
         yield File.read(destination_file_path)
       end
 
+      def not_expect_file(file_path)
+        destination_file_path = "#{destination_root}/#{file_path}"
+        expect(File).not_to exist(destination_file_path)
+      end
+
       private
 
       def destination_root

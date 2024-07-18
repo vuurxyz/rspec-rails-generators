@@ -1,0 +1,2 @@
+namespace :spec do
+end
